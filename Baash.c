@@ -16,8 +16,6 @@
 int main(int argc, char *argv[])
 {
 	int flagWaitPID, bgProcess, pipeExecuted;
-	//int argC;
-	//char* argV[20];
 	char* argv1[20]; 
 	char* argv2[20];
 	
@@ -28,7 +26,6 @@ int main(int argc, char *argv[])
 	user = getlogin();
 	
 	pid_t pid;
-	int status;
 	char comando [256]; 
 	
 	char *paths[20];
@@ -116,4 +113,5 @@ int main(int argc, char *argv[])
 			}	
 		}
 	}
+	return 0;
 	}
